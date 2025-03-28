@@ -7,6 +7,7 @@ import { FolderStructureSection } from './MC-12-FolderStructureSection/FolderStr
 import { AxiosSection } from './MC-13-LearnAxios/AxiosSection';
 import { WorkoutTimerSection } from './MC-14-ReactWorkoutTimer/WorkoutTimerSection';
 import { AccordianSection } from './MC-15-AccordianSection/AccoordianSection';
+import { SearchBar } from './MC-16-SearchDebounceAndModal/SearchBar';
 import { MainCommentSection } from './MC-2-Comments/MainCommentSection';
 import { LazyloadingSection } from './MC-2-LazyLoading/LazyloadingSection';
 import { OTPMainSection } from './MC-3-OTP/OTPMainSection';
@@ -26,7 +27,7 @@ function App() {
       {/* <OTPMainSection /> */}
       {/* <PaginationSection /> */}
       {/* <ReduxMainSection /> */}
-      <CustomHookSection />
+      {/* <CustomHookSection /> */}
       {/* <TicTacToeSection size={4}/> */}
       {/* <LazyloadingSection /> */}
       {/* <ForwardRefSection /> */}
@@ -39,6 +40,7 @@ function App() {
       {/* <AxiosSection /> */}
       {/* <WorkoutTimerSection /> */}
       {/* <AccordianSection /> */}
+      <SearchBar />
     </div>
   );
 }
