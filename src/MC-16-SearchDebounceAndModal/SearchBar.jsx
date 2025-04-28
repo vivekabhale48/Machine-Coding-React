@@ -3,8 +3,6 @@ import { useDebounce } from "./customHook/useDebounce";
 
 const highLightText = (title, searchQuery) => {
 
-    if (!searchQuery) return text;
-
     const regex = new RegExp(`(${searchQuery})`, 'gi');
     // console.log(regex);  
     console.log(title.split(regex));
