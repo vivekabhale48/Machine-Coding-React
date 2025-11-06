@@ -8,6 +8,7 @@ import { AxiosSection } from './MC-13-LearnAxios/AxiosSection';
 import { WorkoutTimerSection } from './MC-14-ReactWorkoutTimer/WorkoutTimerSection';
 import { AccordianSection } from './MC-15-AccordianSection/AccoordianSection';
 import { SearchBar } from './MC-16-SearchDebounceAndModal/SearchBar';
+import InfiniteScroll from './MC-17-InfiniteScroll/InfiniteScroll';
 import { MainCommentSection } from './MC-2-Comments/MainCommentSection';
 import { LazyloadingSection } from './MC-2-LazyLoading/LazyloadingSection';
 import { OTPMainSection } from './MC-3-OTP/OTPMainSection';
@@ -40,7 +41,8 @@ function App() {
       {/* <AxiosSection /> */}
       {/* <WorkoutTimerSection /> */}
       {/* <AccordianSection /> */}
-      <SearchBar />
+      {/* <SearchBar /> */}
+      <InfiniteScroll />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export const SearchAndSelectSection = () => {
   }
   return (
     <div>
-      <div className="border h-[80px] flex items-center p-2">
+      <div className="border flex items-center p-2 flex-wrap gap-3">
         {selectedData.length > 0 &&
           selectedData.map((ele, index) => (
             <div
