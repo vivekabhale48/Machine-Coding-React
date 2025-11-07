@@ -1,8 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const fetchItems = async (page) => {
-    return Array(10).fill(0).map((_, i) => `Item ${(page - 1) * 10 + i + 1}`);
+    return new Array(10).fill(0).map((_, i) => ({
+        id: `img-${page}-${i}`,
+        url: `https://picsum.photos/800/600?random=${page}${i}`
+    }));
 }
+
 export default function InfiniteScroll() {
 
     const [items, setItems] = useState([]);
@@ -45,23 +49,21 @@ export default function InfiniteScroll() {
 
     return (
         <div>
-            <h1 style={{fontSize: '30px', fontWeight: '600'}}>Infinite Scroll Demo Items</h1>
-            {
-                items.map((ele, i) => {
-                    if (i === items.length - 1) {
+            <h1 style={{fontSize: '30px', fontWeight: '600', textAlign: 'center'}}>Infinite Scroll</h1>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '15px', padding: '20px'}}>
+                {
+                    items.map((img, i) => {
+                        if(items.length-1 === i) {
+                            return (
+                                <img style={{width: '100%', objectFit: 'cover', height: '250px', borderRadius: '10px'}} ref={lastItemRef} key={img?.id} src={img.url} alt="HD"  />
+                            )
+                        }
                         return (
-                            <div key={i} ref={lastItemRef} style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '10px' }}>
-                                Hey {ele}
-                            </div>
+                            <img style={{width: '100%', objectFit: 'cover', height: '250px', borderRadius: '10px'}} key={img?.id} src={img.url} alt="HD" />
                         )
-                    }
-                    return (
-                        <div key={i} style={{ padding: '20px', border: '1px solid #ccc', marginBottom: '10px' }}>
-                            {ele}
-                        </div>
-                    )
-                })
-            }
+                    })
+                }
+            </div>
 
             {loading && <p>Loading...</p>}
             {!hasMore && <p>✅ No more items</p>}
