@@ -9,6 +9,8 @@ import { WorkoutTimerSection } from './MC-14-ReactWorkoutTimer/WorkoutTimerSecti
 import { AccordianSection } from './MC-15-AccordianSection/AccoordianSection';
 import { SearchBar } from './MC-16-SearchDebounceAndModal/SearchBar';
 import InfiniteScroll from './MC-17-InfiniteScroll/InfiniteScroll';
+import ChessBoard from './MC-18-ChessBoard/chessBoard';
+import ReactPureComponentsImplementation from './MC-19-PureComponentsReact/reactPureComponentsImplementation';
 import { MainCommentSection } from './MC-2-Comments/MainCommentSection';
 import { LazyloadingSection } from './MC-2-LazyLoading/LazyloadingSection';
 import { OTPMainSection } from './MC-3-OTP/OTPMainSection';
@@ -42,7 +44,9 @@ function App() {
       {/* <WorkoutTimerSection /> */}
       {/* <AccordianSection /> */}
       {/* <SearchBar /> */}
-      <InfiniteScroll />
+      {/* <InfiniteScroll /> */}
+      {/* <ChessBoard dimension={8}/> */}
+      <ReactPureComponentsImplementation />
     </div>
   );
 }
