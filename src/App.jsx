@@ -13,6 +13,8 @@ import ChessBoard from './MC-18-ChessBoard/chessBoard';
 import ReactPureComponentsImplementation from './MC-19-PureComponentsReact/reactPureComponentsImplementation';
 import { MainCommentSection } from './MC-2-Comments/MainCommentSection';
 import { LazyloadingSection } from './MC-2-LazyLoading/LazyloadingSection';
+import { UseReducerHook } from './MC-20-UseReducerHookImplementation/UseReducerHook';
+import ParentComponent from './MC-21-sendingDataFromChildToParent/sendDataFromChildToParent';
 import { OTPMainSection } from './MC-3-OTP/OTPMainSection';
 import { PaginationSection } from './MC-4-Pagination/PaginationSection';
 import { TicTacToeSection } from './MC-5-TicTacToe/TicTacToeSection';
@@ -46,7 +48,9 @@ function App() {
       {/* <SearchBar /> */}
       {/* <InfiniteScroll /> */}
       {/* <ChessBoard dimension={8}/> */}
-      <ReactPureComponentsImplementation />
+      {/* <ReactPureComponentsImplementation /> */}
+      {/* <UseReducerHook /> */}
+      <ParentComponent />
     </div>
   );
 }
