@@ -34,6 +34,7 @@ export const WorkoutTimerSection = () => {
   return (
     <div>
       <div className="w-[300ox] h-[300px] border flex flex-col justify-center items-center">
+        <div>{countTimer}</div>
         <div>{formatTime(countTimer)}</div>
         <div className="flex gap-2 mt-2">
           <button onClick={startTimer} className="btn-blue">
