@@ -16,6 +16,7 @@ import { LazyloadingSection } from './MC-2-LazyLoading/LazyloadingSection';
 import { UseReducerHook } from './MC-20-UseReducerHookImplementation/UseReducerHook';
 import ParentComponent from './MC-21-sendingDataFromChildToParent/sendDataFromChildToParent';
 import ComponentWithModal from './MC-22-ModalUsingReact/ComponentWithModal';
+import { TodoListComponent } from './MC-23-ToDoList/TodoListComponent';
 import { OTPMainSection } from './MC-3-OTP/OTPMainSection';
 import { PaginationSection } from './MC-4-Pagination/PaginationSection';
 import { TicTacToeSection } from './MC-5-TicTacToe/TicTacToeSection';
@@ -39,7 +40,7 @@ function App() {
       {/* <ForwardRefSection /> */}
       {/* <UseLayoutHookSection /> */}
       {/* <ProgressBarSection /> */}
-      <SearchAndSelectSection />
+      {/* <SearchAndSelectSection /> */}
       {/* <FormValidationSection /> */}
       {/* <DebounceSection /> */}
       {/* <FolderStructureSection /> */}
@@ -53,6 +54,7 @@ function App() {
       {/* <UseReducerHook /> */}
       {/* <ParentComponent /> */}
       {/* <ComponentWithModal /> */}
+      <TodoListComponent />
     </div>
   );
 }
