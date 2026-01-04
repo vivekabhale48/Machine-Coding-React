@@ -47,14 +47,14 @@ function App() {
       {/* <AxiosSection /> */}
       {/* <WorkoutTimerSection /> */}
       {/* <AccordianSection /> */}
-      {/* <SearchBar /> */}
+      <SearchBar />
       {/* <InfiniteScroll /> */}
       {/* <ChessBoard dimension={8}/> */}
       {/* <ReactPureComponentsImplementation /> */}
       {/* <UseReducerHook /> */}
       {/* <ParentComponent /> */}
       {/* <ComponentWithModal /> */}
-      <TodoListComponent />
+      {/* <TodoListComponent /> */}
     </div>
   );
 }
