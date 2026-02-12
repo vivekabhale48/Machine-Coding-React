@@ -17,6 +17,8 @@ import { UseReducerHook } from './MC-20-UseReducerHookImplementation/UseReducerH
 import ParentComponent from './MC-21-sendingDataFromChildToParent/sendDataFromChildToParent';
 import ComponentWithModal from './MC-22-ModalUsingReact/ComponentWithModal';
 import { TodoListComponent } from './MC-23-ToDoList/TodoListComponent';
+import { StepperComponent } from './MC-24-StepperForm/StepperComponent';
+import { ReusableStarComponent } from './MC-25-ReusableStarComponent/ReusableStarComponent';
 import { OTPMainSection } from './MC-3-OTP/OTPMainSection';
 import { PaginationSection } from './MC-4-Pagination/PaginationSection';
 import { TicTacToeSection } from './MC-5-TicTacToe/TicTacToeSection';
@@ -47,7 +49,7 @@ function App() {
       {/* <AxiosSection /> */}
       {/* <WorkoutTimerSection /> */}
       {/* <AccordianSection /> */}
-      <SearchBar />
+      {/* <SearchBar /> */}
       {/* <InfiniteScroll /> */}
       {/* <ChessBoard dimension={8}/> */}
       {/* <ReactPureComponentsImplementation /> */}
@@ -55,6 +57,8 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <ComponentWithModal /> */}
       {/* <TodoListComponent /> */}
+      {/* <StepperComponent /> */}
+      <ReusableStarComponent />
     </div>
   );
 }
