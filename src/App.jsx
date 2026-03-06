@@ -27,6 +27,8 @@ import { UseLayoutHookSection } from './MC-7-useLayoutHook/UseLayoutHookSection'
 import { ProgressBarSection } from './MC-8-ProgressBar/ProgressBarSection';
 import { SearchAndSelectSection } from './MC-9-SearchAndSelect/SearchAndSelectSection';
 import { ReduxMainSection } from './redux/ReduxMainSection';
+import { ReactSearchComponentWithDebounce } from './MC-27-ReactSearchWithDebounce/ReactSearchComponentWithDebounce';
+import { UseFetchWithAbortController } from './MC-28-UseFetchWIthAbortController/UseFecthWIthAbortController';
 
 function App() {
   return (
@@ -58,7 +60,9 @@ function App() {
       {/* <ComponentWithModal /> */}
       {/* <TodoListComponent /> */}
       {/* <StepperComponent /> */}
-      <ReusableStarComponent />
+      {/* <ReusableStarComponent /> */}
+      {/* <ReactSearchComponentWithDebounce /> */}
+      <UseFetchWithAbortController />
     </div>
   );
 }
