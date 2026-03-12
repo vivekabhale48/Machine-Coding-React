@@ -29,6 +29,7 @@ import { SearchAndSelectSection } from './MC-9-SearchAndSelect/SearchAndSelectSe
 import { ReduxMainSection } from './redux/ReduxMainSection';
 import { ReactSearchComponentWithDebounce } from './MC-27-ReactSearchWithDebounce/ReactSearchComponentWithDebounce';
 import { UseFetchWithAbortController } from './MC-28-UseFetchWIthAbortController/UseFecthWIthAbortController';
+import { AutoSuggestion } from './MC-29-AutosuggestionTypeAhead/Autosuggestion';
 
 function App() {
   return (
@@ -62,7 +63,8 @@ function App() {
       {/* <StepperComponent /> */}
       {/* <ReusableStarComponent /> */}
       {/* <ReactSearchComponentWithDebounce /> */}
-      <UseFetchWithAbortController />
+      {/* <UseFetchWithAbortController /> */}
+      <AutoSuggestion />
     </div>
   );
 }
